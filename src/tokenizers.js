@@ -70,7 +70,7 @@ function createPattern(pattern, invert = true) {
 
     if (pattern.Regex !== undefined) {
         // NOTE: if invert is true, we wrap the pattern in a group so that it is kept when performing .split()
-        return new RegExp(invert ? pattern.Regex : `(${pattern.Regex})`, 'gu');
+        // return new RegExp(invert ? pattern.Regex : `(${pattern.Regex})`, 'gu');
 
     } else if (pattern.String !== undefined) {
         return pattern.String;
